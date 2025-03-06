@@ -10,20 +10,14 @@ PokerVision streamlines the process of collecting and analyzing hand histories. 
 
 Below are a few screenshots of the interface in action:
 
-![Graph Tab](images/graph_tab.png "Graph Tab")
-*Displays the cumulative profit chart over 12,000 sample hands.*
+![Graph Tab](images/Graph.png "Graph Tab")
+*Displays the cumulative profit chart over 12,000 sample hands, with some key stats.*
 
-![Range Tab - Facing Raise](images/range_tab_facing_raise.png "Range Tab - Facing Raise")
+![Range Tab - Facing Raise](images/Range.png "Range Tab - Facing Raise")
 *Illustrates raise/call/fold frequencies in a color-coded 13x13 matrix.*
 
-![Range Tab - Facing 3-Bet](images/range_tab_facing_3bet.png "Range Tab - Facing 3-Bet")
-*Highlights how often certain hands are raised or called when facing a 3-bet.*
-
-![LeakHelper Tab 1](images/leakhelper_tab_1.png "LeakHelper Tab 1")
+![LeakHelper Tab 1](images/Leaks.png "LeakHelper Tab 1")
 *Shows a grid of hands with profit/loss color-coding for quick leak detection.*
-
-![LeakHelper Tab 2](images/leakhelper_tab_2.png "LeakHelper Tab 2")
-*Another LeakHelper view focusing on a specific subset of premium hands.*
 
 ---
 
