@@ -1,4 +1,4 @@
-# Poker Tracker
+# PokerVision
 
 A robust Python application for importing, parsing, and analyzing poker hand histories. Designed with a sleek graphical interface and powerful statistical analysis tools, Poker Tracker empowers you to dive deep into your game performance.
 
@@ -6,7 +6,7 @@ A robust Python application for importing, parsing, and analyzing poker hand his
 
 ## Overview
 
-Poker Tracker streamlines the process of collecting and analyzing hand histories. Built on Python with a Tkinter GUI, it leverages a local SQLite database to store comprehensive details for each hand, enabling detailed profit analysis, positional insights, and performance tracking.
+PokerVision streamlines the process of collecting and analyzing hand histories. Built on Python with a Tkinter GUI, it leverages a local SQLite database to store comprehensive details for each hand, enabling detailed profit analysis, positional insights, and performance tracking.
 
 Below are a few screenshots of the interface in action:
 
@@ -63,7 +63,7 @@ Below are a few screenshots of the interface in action:
 
 ### Setup Steps
 1. **Download or Clone:**  
-   Ensure `poker_tracker.py` and the sample dataset are in your working directory.
+   Ensure `pokervision.py` and the sample dataset are in your working directory.
 
 2. **Install Dependencies:**  
    Open your terminal and run:
