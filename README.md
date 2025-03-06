@@ -1,69 +1,71 @@
 # Poker Tracker
 
+A robust Python application for importing, parsing, and analyzing poker hand histories. Designed with a sleek graphical interface and powerful statistical analysis tools, Poker Tracker empowers you to dive deep into your game performance.
+
+---
+
 ## Overview
 
-`poker_tracker.py` is a comprehensive Python-based application designed to import, parse, and analyze poker hand histories. The tool combines a graphical user interface (GUI) built with Tkinter, a robust SQLite database for data storage, and matplotlib for interactive visualization. It is ideal for tracking and reviewing poker performance, offering detailed analysis of hand actions, profit calculations, and more.
+Poker Tracker streamlines the process of collecting and analyzing hand histories. Built on Python with a Tkinter GUI, it leverages a local SQLite database to store comprehensive details for each hand, enabling detailed profit analysis, positional insights, and performance tracking.
 
-## Features
+Below are a few screenshots of the interface in action:
 
-- **Hand History Import:**  
-  - Supports importing hand histories from plain text (TXT) files and ZIP archives.
-  - Automatically extracts and parses hand data, including hand IDs, stakes, timestamps, player positions, hole cards, and action sequences for GGPoker Cash Games.
+![Graph Tab](images/graph_tab.png "Graph Tab")
+*Displays the cumulative profit chart over 12,000 sample hands.*
 
-- **Database Integration:**  
-  - Creates and manages a local SQLite database (`poker_data.db`) to store detailed hand information.
-  - Stores various metrics such as total pot, rake, hero profit, hero contributions, and adjusted profit (including rakeback).
+![Range Tab - Facing Raise](images/range_tab_facing_raise.png "Range Tab - Facing Raise")
+*Illustrates raise/call/fold frequencies in a color-coded 13x13 matrix.*
 
-- **Graphical User Interface:**  
-  - **Import / Hands Tab:** Import hand history files and view a sortable, filterable list of hands.
-  - **Graph Tab:** Visualize statistical insights like profit trends and Big Blind (BB) performance.
-  - **Range Analysis Tab:** Analyze starting hand ranges and preflop scenarios.
-  - **LeakHelper Tab:** Tools to help identify potential areas for improvement in your game.
+![Range Tab - Facing 3-Bet](images/range_tab_facing_3bet.png "Range Tab - Facing 3-Bet")
+*Highlights how often certain hands are raised or called when facing a 3-bet.*
 
-- **Advanced Hand Analysis:**  
-  - Deduction of hero position based on button position in 6-max games.
-  - Calculation of hero contributions and profit, taking into account factors like rake, jackpots, and multiple showdown scenarios.
-  - Determination of preflop scenarios (e.g., open, 3bet, 4bet) and opportunities such as raising first in.
+![LeakHelper Tab 1](images/leakhelper_tab_1.png "LeakHelper Tab 1")
+*Shows a grid of hands with profit/loss color-coding for quick leak detection.*
 
-## Sample Data
+![LeakHelper Tab 2](images/leakhelper_tab_2.png "LeakHelper Tab 2")
+*Another LeakHelper view focusing on a specific subset of premium hands.*
 
-The package includes **12,000 hands of sample data** to help you explore and test the application’s features right away. This sample data provides a robust dataset for analyzing performance and visualizing trends without needing to immediately import your own hand histories.
+---
 
-## Requirements
+## Key Features
 
+- **Efficient Hand Importing:**  
+  Import hand histories from TXT and ZIP files. The application automatically extracts and parses essential data such as hand IDs, stakes, timestamps, player positions, hole cards, and action sequences.
+
+- **Comprehensive Data Management:**  
+  - Uses an SQLite database (`poker_data.db`) to store extensive hand details.  
+  - Tracks metrics including total pot, rake, hero contributions, and profit calculations (with adjustable rakeback).
+
+- **User-Friendly Interface:**  
+  - **Import / Hands Tab:** Quickly load and view hand histories with sorting and filtering options.
+  - **Graph Tab:** Visualize performance trends and profit metrics using interactive charts.
+  - **Range Analysis Tab:** Explore starting hand ranges and preflop scenarios.
+  - **LeakHelper Tab:** Identify potential weaknesses in your game.
+
+- **Advanced Analysis Tools:**  
+  - Deduces player position based on button placement in 6-max games.
+  - Calculates detailed profit metrics, including adjusted profit after considering rakeback.
+  - Determines key preflop scenarios such as open raises, 3-bets, and 4-bets.
+
+- **Extensive Sample Data:**  
+  Comes pre-loaded with **12,000 hands of sample data** to get you started immediately on performance analysis.
+
+---
+
+## Installation
+
+### Prerequisites
 - **Python 3.x**
-- **SQLite3** (usually bundled with Python)
-- **Tkinter** (typically included with Python installations)
+- **SQLite3** (included with Python)
+- **Tkinter** (included with Python)
 - **NumPy**
 - **Matplotlib**
 
-Other standard libraries such as `os`, `re`, `json`, `zipfile`, `tempfile`, and `datetime` are used in the project.
-
-## Installation and Setup
-
-1. **Clone or Download the Repository:**  
-   Ensure that `poker_tracker.py` and the accompanying sample data are located in your project directory.
+### Setup Steps
+1. **Download or Clone:**  
+   Ensure `poker_tracker.py` and the sample dataset are in your working directory.
 
 2. **Install Dependencies:**  
-   If necessary, install the required packages using pip:
+   Open your terminal and run:
    ```bash
    pip install numpy matplotlib
-(Note: Tkinter and SQLite3 are usually available by default with Python.)
-
-Run the Application:
-Launch the app by running:
-bash
-Copy
-python poker_tracker.py
-The GUI will open, allowing you to import hand histories and begin your analysis.
-Usage
-Importing Hand Histories:
-Navigate to the "Import / Hands" tab to load hand history files. The application supports both TXT and ZIP file formats.
-
-Analyzing Data:
-
-Use the "Graph" tab to view interactive charts and statistics.
-Filter and sort hands based on criteria like stake, date, or profit.
-Explore range analysis to see detailed metrics on starting hand performance.
-Customizing Settings:
-Adjust settings such as the rakeback percentage to tailor profit calculations and other statistics to your specific needs.
