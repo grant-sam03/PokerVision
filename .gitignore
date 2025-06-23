@@ -1,2 +1,3 @@
 api_settings.json
-_pycache_/ 
+__pycache__/
+**/__pycache__/ 
